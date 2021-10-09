@@ -1,0 +1,2 @@
+rootProject.name = "CoTimer"
+include ':app'
