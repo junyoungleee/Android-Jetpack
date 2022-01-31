@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_background_round"
+    android:padding="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_repo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="repository title"
+        style="@style/content_text1"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:id="@+id/tv_repo_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="repository content"
+        style="@style/content_text2"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_repo_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="language"
+            style="@style/point_text_box"
+            android:gravity="left"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|right">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="6dp"
+                android:src="@drawable/star"
+                android:tint="@color/white"/>
+            <TextView
+                android:id="@+id/tv_repo_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1004"
+                style="@style/content_text3"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="4dp"
+                android:src="@drawable/fork"
+                android:tint="@color/white"/>
+            <TextView
+                android:id="@+id/tv_repo_fork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345"
+                style="@style/content_text3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

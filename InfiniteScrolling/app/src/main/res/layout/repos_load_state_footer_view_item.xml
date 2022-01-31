@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/tv_load_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Error Message"
+        style="@style/content_error"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/load_progress_bar"
+        app:lottie_rawRes="@raw/loading_bar"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/retry_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="retry"
+        android:textColor="@color/content"
+        android:backgroundTint="@color/error"/>
+
+</LinearLayout>
